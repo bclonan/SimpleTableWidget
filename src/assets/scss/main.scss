@@ -1,0 +1,167 @@
+/*! dashboard.scss | XYZ Leads | XYZ Leads */
+
+/* ==========================================================================
+Dashboard core file 
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. CSS Imports
+1. Resets and base setup
+=============================================================================
+***/
+
+/* ==========================================================================
+0. CSS Imports - Default / Dark
+========================================================================== */
+
+
+/* ==========================================================================
+1. Resets and base setup
+========================================================================== */
+
+
+$primary : #BB86FC;
+$error : #CF6679;
+$surface-dark : #121212;
+$--color-primary : #BB86FC;
+$--color-danger : #CF6679;
+$--background-color-base : #121212 ;
+
+.no-touch .scrollable.hover {
+    overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y: auto;
+    overflow: visible;
+}
+
+
+body[data-theme='dark'] {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    overflow: hidden !important;
+    background-color: $surface-dark;
+    margin: 0 !important;
+    height: 100% !important;
+    //background: linear-gradient(rgba(220, 159, 232, 0.15) 25%, rgb(244, 246, 251) 0%);
+}
+
+.appHeader[data-theme='dark'] {
+   text-align: left; 
+  
+   line-height: 5%;
+   font-size: 1.5rem;
+   color: whitesmoke;
+   background-color: $primary
+}
+
+.el-message-box {
+    display: inline-block;
+    width: 75vw;
+    min-width: 50%;
+    max-width: 100vh;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    /* color: white; */
+    background-color: #121212;
+    border-radius: 4px;
+    border: 1px solid #4e4e4e;
+    font-size: 1rem;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    text-align: left;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.el-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #FFF;
+    border: 1px solid #DCDFE6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    -webkit-transition: .1s;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.el-button--mini, .el-button--small {
+    font-size: .75rem;
+    font-weight: 600;
+    border-radius: 3px;
+    font-family: Nunito;
+    letter-spacing: inherit;
+}
+
+.el-message-box__title {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: #fdfdfd;
+    font-weight: bold;
+}
+
+.el-message-box__headerbtn .el-message-box__close {
+    color: #ffffff;
+}
+
+.el-message-box__content {
+    position: relative;
+    padding: 10px 15px;
+    color: #d2d2d2;
+    font-size: 18px;
+    font-family: Nunito;
+}
+
+.el-message-box__header {
+    position: relative;
+    padding: 15px 15px 10px;
+    padding-bottom: 2%;
+}
+
+.el-table thead {
+    //color: #ffffff; 
+    font-weight: 500;
+}
+
+.darkHeader {
+    background-color: blue; 
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url("../fonts/Nunito/NunitoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Nunito Bold';
+    src: url("../fonts/Nunito/NunitoBold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Nunito Light';
+    src: url("../fonts/Nunito/NunitoLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Nunito Semi Bold';
+    src: url("../fonts/Nunito/NunitoSemiBold.ttf") format("truetype");
+}
